@@ -19,4 +19,16 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+    <string name="events">Events</string>
+    <string name="organisations">Organisations</string>
+    <string name="internships">Internships</string>
+    <string name="extras">Extras</string>
+
+    <string name="sport">Sport</string>
+    <string name="music">Music</string>
+    <string name="art">Art</string>
+    <string name="science">Science</string>
+    <string name="meetings">Meetings</string>
+
 </resources>

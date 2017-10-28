@@ -9,4 +9,18 @@
         tools:showIn="@layout/app_bar_main"
         tools:context="com.example.admin.student.MainActivity">
 
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="108dp"
+        android:layout_height="89dp"
+        android:background="@drawable/events"
+        android:text="Events"
+        tools:text="Events"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 </android.support.constraint.ConstraintLayout>
