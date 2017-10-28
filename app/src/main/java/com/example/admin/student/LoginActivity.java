@@ -41,6 +41,8 @@ import static android.provider.AlarmClock.EXTRA_MESSAGE;
  */
 public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<Cursor> {
 
+    public static final String EXTRA_MESSAGE = "com.example.admin.student.MESSAGE";
+
     /**
      * Id to identity READ_CONTACTS permission request.
      */
@@ -335,7 +337,9 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             showProgress(false);
 
             if (success) {
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                intent.putExtra(EXTRA_MESSAGE, mEmail);
+                startActivity(intent);
             } else {
                 mPasswordView.setError(getString(R.string.error_incorrect_password));
                 mPasswordView.requestFocus();
